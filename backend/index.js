@@ -9,7 +9,7 @@ app.use(cors());
 // Esto es un "endpoint" o ruta. 
 // Cuando alguien visite la raíz de nuestra web, le responderemos esto.
 app.get('/', (req, res) => {
-  res.send('¡Hola! Este es mi primer servidor con Node.js y Express.');
+  res.send('¡Hola! Estoy haciendo pruebas con ramas en Git.');
 });
 
 // Otra ruta para probar que podemos tener varias (como páginas en PHP)
