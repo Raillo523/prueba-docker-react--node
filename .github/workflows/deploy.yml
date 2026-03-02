@@ -1,0 +1,18 @@
+name: Despliegue Web
+
+on:
+  push:
+    branches: [ "main" ] # Se activa cuando haces merge o push a main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Simular despliegue
+        run: |
+          echo "Conectando al servidor remoto..."
+          echo "Ejecutando docker-compose up --build -d"
+          echo "¡Web actualizada con éxito!"
